@@ -29,14 +29,14 @@ function nowServing (katzDeliLine){
 
 
 function currentLine(katzDeliLine){
-  var string = "1. + katzDeliLine[0]"
+  var string = "1. " + katzDeliLine[0]
   for (var i=1; i<katzDeliLine.length; i++){
-    string += [i+1] + katzDeliLine[i]
+    string += ','+ [i+1] + '. ' + katzDeliLine[i]
   }
      if (katzDeliLine.length === 0){
       return "The line is currently empty."
     }else{
-      return "The line is currently" + string
+      return "The line is currently " + string
     }
 }
  currentLine(["Bill"," Jane"," Ann"])
